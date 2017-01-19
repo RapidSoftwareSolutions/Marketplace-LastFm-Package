@@ -11,22 +11,12 @@ module.exports = (req, res) => {
 
     let { 
         apiKey,
-        sessionKey,
         secretKey,
-        artist,
-        track,
-        timestamp,
-        album,
-        context,
-        streamId,
-        chosenByUser,
-        trackNumber,
-        mbid,
-        albumArtist,
-        duration
+        sessionKey,
+        scrobbleData
     } = req.body.args;
         
-    let required = lib.parseReq({apiKey, sessionKey, artist, track, timestamp});
+    let required = lib.parseReq({apiKey, sessionKey, secretKey, scrobbleData});
 
     if(required.length > 0) 
         throw new Object({
@@ -42,21 +32,16 @@ module.exports = (req, res) => {
 
     lfm.setSessionCredentials('', sessionKey);  
 
-    let request = lib.clearArgs({
-        artist,
-        track,
-        timestamp,
-        album,
-        context,
-        streamId,
-        chosenByUser,
-        trackNumber,
-        mbid,
-        albumArtist,
-        duration
-    });
+    try {
+        scrobbleData = JSON.parse(scrobbleData);
+    } catch(e) {
+        throw new Object({
+            status_code: 'JSON_VALIDATION', 
+            status_msg:  'Syntax error. Incorrect input JSON. Please, check fields with JSON input.'
+        });
+    }
     
-    lfm.track.scrobble(request, (err, scrobbles) => {
+    lfm.track.scrobble(scrobbleData, (err, scrobbles) => {
         if (err) defered.reject(err);
 
         defered.resolve(scrobbles);

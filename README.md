@@ -1,9 +1,11 @@
 # LastFm Package
-* Credentials: apiKey
+* Credentials: apiKey, secretKey
 
 ## How to get credentials: 
 0. Create new API account [here](http://www.last.fm/api/account/create).
 1. Copy and save your API key.
+
+Use **API key**	as `apiKey` and **Shared secret** as `secretKey`.
 
 ## LastFm.tagAlbum
 Tag an album using a list of user supplied tags.
@@ -184,7 +186,7 @@ Create a web service session for a user. Used for authenticating a user when the
 | Field     | Type       | Description
 |-----------|------------|----------
 | apiKey    | credentials| A Last.fm API key.
-| secretKey | String     | A Last.fm shared secret key.
+| secretKey | credentials| A Last.fm shared secret key.
 | username  | String     | The last.fm username or email address.
 | password  | String     | The password in plain text.
 
@@ -195,7 +197,7 @@ Fetch a session key for a user. The third step in the authentication process. Se
 |-----------|------------|----------
 | apiKey    | credentials| A Last.fm API key.
 | token     | String     | The authentication token received at your callback url as a GET variable.
-| secretKey | String     | A Last.fm shared secret key from dashboard.
+| secretKey | credentials| A Last.fm shared secret key from dashboard.
 
 ## LastFm.getTopArtistsChart
 Get the top artists chart
@@ -415,6 +417,7 @@ Scrobble a batch of tracks.
 | Field           | Type       | Description
 |-----------------|------------|----------
 | apiKey          | credentials| A Last.fm API key.
+| apiSecret       | credentials| A Last.fm API secret.
 | scrobbleData    | Array      | Scrobble data.
 
 #### `scrobbleData` field example:
