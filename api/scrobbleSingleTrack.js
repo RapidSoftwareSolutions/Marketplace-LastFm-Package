@@ -34,12 +34,11 @@ module.exports = (req, res) => {
             fields: required
         });
 
-    let uri = `format=json&method=track.scrobble&api_key=${apiKey}&sk=${sessionKey}`;
+    let uri = `method=track.scrobble&api_key=${apiKey}&sk=${sessionKey}`;
 
-    uri += '&artist[0]=' + encode(artist);
-    uri += '&track[0]=' + encode(track);
-    uri += '&timestamp[0]=' + timestamp;
-    //uri += '&api_sig=' + md5(`api_key${apiKey}methodauth.getSessiontoken86eab0bc780222e7fb9cbe47b43d084d` + 'e3f6bc684a38ee300fef1b223020ac2b')
+    uri += '&artist["0"]=' + encode(artist);
+    uri += '&track["0"]=' + encode(track);
+    uri += '&timestamp["0"]=' + timestamp;
 
     /*if(album)        uri += '&album[0]=' + encode(album);
     if(context)      uri += 'context[0]=' + encode(context);

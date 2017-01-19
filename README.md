@@ -415,7 +415,22 @@ Scrobble a batch of tracks.
 | Field           | Type       | Description
 |-----------------|------------|----------
 | apiKey          | credentials| A Last.fm API key.
-| scrobbleData    | JSON       | Scrobble data. See README for more info.
+| scrobbleData    | Array      | Scrobble data.
+
+#### `scrobbleData` field example:
+```json
+"scrobbleData": [{
+	"artist": "Test artist",
+	"track": "Test track",
+	"timestamp": 1484833491
+}, {
+	"artist": "Test artist #2",
+	"track": "Test track #2",
+	"timestamp": 1484833500
+}]
+```
+
+See ScrobbleItem object description in `scrobbleSingleTrack` method.
 
 ## LastFm.scrobbleSingleTrack
 Scrobble a track.

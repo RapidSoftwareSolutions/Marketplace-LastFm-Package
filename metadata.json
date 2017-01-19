@@ -1670,7 +1670,7 @@
         },
         {
           "name": "scrobbleData",
-          "type": "JSON",
+          "type": "Array",
           "info": "Scrobble data. See README for more info.",
           "required": true
         }
