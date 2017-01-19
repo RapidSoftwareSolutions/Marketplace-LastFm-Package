@@ -1,0 +1,568 @@
+{
+    "tagAlbum": {
+        "action": "album.addTags",
+        "method": "POST",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|sessionKey": "$sk",
+            "String|artist": "$artist",
+            "String|album": "$album",
+            "String|tags": "$tags"
+        }
+    },
+    "getAlbumInfo": {
+        "action": "album.getInfo",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|artist": "$artist",
+            "String|album": "$album",
+            "String|mbid": "mbid",
+            "String|autocorrect": "autocorrect",
+            "String|username": "username",
+            "String|lang": "lang"
+        }
+    },
+    "getAlbumTags": {
+        "action": "album.getTags",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|artist": "$artist",
+            "String|album": "$album",
+            "String|mbid": "mbid",
+            "String|autocorrect": "autocorrect",
+            "String|user": "user"
+        }
+    },
+    "getTopAlbumTags": {
+        "action": "album.getTopTags",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|artist": "$artist",
+            "String|album": "$album",
+            "String|autocorrect": "autocorrect",
+            "String|mbid": "mbid"
+        }
+    },
+    "untagAlbum": {
+        "action": "album.removeTag",
+        "method": "POST",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|sessionKey": "$sk",
+            "String|artist": "$artist",
+            "String|album": "$album",
+            "String|tag": "$tag"
+        }
+    },
+    "searchAlbum": {
+        "action": "album.search",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|album": "$album",
+            "String|limit": "limit",
+            "String|page": "page"
+        }
+    },
+    "tagArtist": {
+        "action": "artist.addTags",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|sessionKey": "$sk",
+            "String|artist": "$artist",
+            "String|tags": "$tags"
+        }
+    },
+    "getArtistCorrection": {
+        "action": "artist.getCorrection",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|artist": "$artist"
+        }
+    },
+    "getArtistInfo": {
+        "action": "artist.getInfo",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|artist": "$artist",
+            "String|mbid": "mbid",
+            "String|lang": "lang",
+            "String|autocorrect": "autocorrect",
+            "String|username": "username"
+        }
+    },
+    "getSimilarArtists": {
+        "action": "artist.getSimilar",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|artist": "$artist",
+            "String|limit": "limit",
+            "String|autocorrect": "autocorrect",
+            "String|mbid": "mbid"
+        }
+    },
+    "getArtistTags": {
+        "action": "artist.getTags",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|artist": "$artist",
+            "String|mbid": "mbid",
+            "String|autocorrect": "autocorrect"
+        }
+    },
+    "getTopArtistAlbums": {
+        "action": "artist.getTopAlbums",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|artist": "$artist",
+            "String|mbid": "mbid",
+            "String|autocorrect": "autocorrect",
+            "String|page": "page",
+            "String|limit": "limit"
+        }
+    },
+    "getTopArtistTags": {
+        "action": "artist.getTopTags",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|artist": "$artist",
+            "String|mbid": "mbid",
+            "String|autocorrect": "autocorrect"
+        }
+    },
+    "getTopArtistTracks": {
+        "action": "artist.getTopTracks",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|artist": "$artist",
+            "String|mbid": "mbid",
+            "String|autocorrect": "autocorrect",
+            "String|limit": "limit",
+            "String|page": "page"
+        }
+    },
+    "untagArtist": {
+        "action": "artist.removeTag",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|sessionKey": "$sk",
+            "String|artist": "$artist",
+            "String|tag": "$tag"
+        }
+    },
+    "searchArtist": {
+        "action": "artist.search",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|artist": "$artist",
+            "String|limit": "limit",
+            "String|page": "page"
+        }
+    },
+    "getTopArtistsChart": {
+        "action": "chart.getTopArtists",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|page": "page",
+            "String|limit": "limit"
+        }
+    },
+    "getTopTagsChart": {
+        "action": "chart.getTopTags",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|page": "page",
+            "String|limit": "limit"
+        }
+    },
+    "getTopTracksChart": {
+        "action": "chart.getTopTracks",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|page": "$page",
+            "String|limit": "limit"
+        }
+    },
+    "getTopArtistsByCountry": {
+        "action": "geo.getTopArtists",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|country": "$country",
+            "String|limit": "limit",
+            "String|page": "page"
+        }
+    },
+    "getTopTracksByCountry": {
+        "action": "geo.getTopTracks",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|country": "$country",
+            "String|limit": "limit",
+            "String|page": "page"
+        }
+    },
+    "getUserArtists": {
+        "action": "library.getArtists",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|user": "$user",
+            "String|limit": "limit",
+            "String|page": "page"
+        }
+    },
+    "getTagInfo": {
+        "action": "tag.getInfo",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|tag": "$tag",
+            "String|lang": "lang"
+        }
+    },
+    "tag.getSimilar": {
+        "action": "getSimilarTags",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|tag": "$tag"
+        }
+    },
+    "getTagTopAlbums": {
+        "action": "tag.getTopAlbums",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|tag": "$tag",
+            "String|limit": "limit",
+            "String|page": "page"
+        }
+    },
+    "getTagTopArtists": {
+        "action": "tag.getTopArtists",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|tag": "$tag",
+            "String|limit": "limit",
+            "String|page": "page"
+        }
+    },
+    "getTopTags": {
+        "action": "tag.getTopTags",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|tag": "$tag",
+            "String|limit": "limit",
+            "String|page": "page"
+        }
+    },
+    "getTopTagTracks": {
+        "action": "tag.getTopTracks",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|tag": "$tag",
+            "String|limit": "limit",
+            "String|page": "page"
+        }
+    },
+    "getWeeklyTagChartList": {
+        "action": "tag.getWeeklyChartList",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|tag": "$tag",
+            "String|limit": "limit",
+            "String|page": "page"
+        }
+    },
+    "tagTrack": {
+        "action": "track.addTags",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|sessionKey": "$sk",
+            "String|artist": "$artist",
+            "String|track": "$track",
+            "String|tags": "$tags"
+        }
+    },
+    "getTrackCorrection": {
+        "action": "track.getCorrection",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|artist": "$artist",
+            "String|track": "$track"
+        }
+    },
+    "getTrackInfo": {
+        "action": "track.getInfo",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|mbid": "$mbid",
+            "String|track": "$track",
+            "String|artist": "artist",
+            "String|username": "username",
+            "String|autocorrect": "autocorrect"
+        }
+    },
+    "getSimilarTracks": {
+        "action": "track.getSimilar",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|track": "$track",
+            "String|artist": "$artist",
+            "String|mbid": "mbid",
+            "String|autocorrect": "autocorrect",
+            "String|limit": "limit"
+        }
+    },
+    "getTrackTags": {
+        "action": "track.getTags",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|track": "$track",
+            "String|artist": "$artist",
+            "String|mbid": "mbid",
+            "String|autocorrect": "autocorrect",
+            "String|user": "user"
+        }
+    },
+    "getTopTrackTags": {
+        "action": "track.getTopTags",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|track": "$track",
+            "String|artist": "$artist",
+            "String|mbid": "mbid",
+            "String|autocorrect": "autocorrect"
+        }
+    },
+    "loveTrack": {
+        "action": "track.love",
+        "method": "POST",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|sessionKey": "$sk",
+            "String|track": "$track",
+            "String|artist": "$artist"
+        }
+    },
+    "untagTrack": {
+        "action": "track.removeTag",
+        "method": "POST",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|sessionKey": "$sk",
+            "String|track": "$track",
+            "String|artist": "$artist",
+            "String|tag": "$tag"
+        }
+    },
+    "searchTracks": {
+        "action": "track.search",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|track": "$track",
+            "String|artist": "artist",
+            "String|limit": "limit",
+            "String|page": "page"
+        }
+    },
+    "unloveTrack": {
+        "action": "track.unlove",
+        "method": "POST",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|sessionKey": "$sk",
+            "String|track": "$track",
+            "String|artist": "$artist"
+        }
+    },
+    "updateNowPlayingTrack": {
+        "action": "track.updateNowPlaying",
+        "method": "POST",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|artist": "$artist",
+            "String|track": "$track",
+            "String|sessionKey": "$sk",
+            "String|album": "album",
+            "String|context": "context",
+            "String|mbid": "mbid",
+            "String|albumArtist": "albumArtist",
+            "String|duration": "duration"
+        }
+    },
+    "getUserArtistTracks": {
+        "action": "user.getArtistTracks",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|user": "$user",
+            "String|artist": "$artist",
+            "String|startTimestamp": "startTimestamp",
+            "String|page": "page",
+            "String|endTimestamp": "endTimestamp"
+        }
+    },
+    "getUserFriends": {
+        "action": "user.getFriends",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|user": "$user",
+            "String|recenttracks": "recenttracks",
+            "String|limit": "limit",
+            "String|page": "page"
+        }
+    },
+    "getUserInfo": {
+        "action": "user.getInfo",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|user": "$user"
+        }
+    },
+    "getUserLovedTracks": {
+        "action": "user.getLovedTracks",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|user": "$user",
+            "String|limit": "limit",
+            "String|page": "page"
+        }
+    },
+    "getUserPersonalTags": {
+        "action": "user.getPersonalTags",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|user": "$user",
+            "String|tag": "$tag",
+            "String|taggingtype": "$taggingtype",
+            "String|limit": "limit",
+            "String|page": "page"
+        }
+    },
+    "getUserRecentTracks": {
+        "action": "user.getRecentTracks",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|user": "$user",
+            "String|page": "page",
+            "String|from": "from",
+            "String|extended": "extended",
+            "String|to": "to"
+        }
+    },
+    "getUserTopAlbums": {
+        "action": "user.getTopAlbums",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|user": "$user",
+            "String|period": "period",
+            "String|limit": "limit",
+            "String|page": "page"
+        }
+    },
+    "getUserTopArtists": {
+        "action": "user.getTopArtists",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|user": "$user",
+            "String|period": "period",
+            "String|limit": "limit",
+            "String|page": "page"
+        }
+    },
+    "getUserTopTags": {
+        "action": "user.getTopTags",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|user": "$user",
+            "String|limit": "limit"
+        }
+    },
+    "getUserTopTracks": {
+        "action": "user.getTopTracks",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|user": "$user",
+            "String|period": "period",
+            "String|limit": "limit",
+            "String|page": "page"
+        }
+    },
+    "getUserWeeklyAlbumChart": {
+        "action": "user.getWeeklyAlbumChart",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|user": "$user",
+            "String|from": "from",
+            "String|to": "to"
+        }
+    },
+    "getUserWeeklyArtistChart": {
+        "action": "user.getWeeklyArtistChart",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|user": "$user",
+            "String|from": "from",
+            "String|to": "to"
+        }
+    },
+    "getUserWeeklyChartList": {
+        "action": "user.getWeeklyChartList",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|user": "$user"
+        }
+    },
+    "getUserWeeklyTrackChart": {
+        "action": "user.getWeeklyTrackChart",
+        "method": "GET",
+        "args": {
+            "String|apiKey": "$api_key",
+            "String|user": "$user",
+            "String|from": "from",
+            "String|to": "to"
+        }
+    }
+}
