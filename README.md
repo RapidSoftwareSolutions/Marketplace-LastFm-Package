@@ -232,7 +232,7 @@ Get the most popular artists on Last.fm by country
 | Field     | Type       | Description
 |-----------|------------|----------
 | apiKey    | credentials| A Last.fm API key.
-| country   | String     | A country name, as defined by the ISO 3166-1 country names standard
+| country   | String     | A full country name
 | limit     | String     | The number of results to fetch per page. Defaults to 50.
 | page      | String     | The page number to fetch. Defaults to first page.
 
@@ -242,7 +242,7 @@ Get the most popular tracks on Last.fm last week by country
 | Field     | Type       | Description
 |-----------|------------|----------
 | apiKey    | credentials| A Last.fm API key.
-| country   | String     | A country name, as defined by the ISO 3166-1 country names standard
+| country   | String     | A full country name
 | limit     | String     | The number of results to fetch per page. Defaults to 50.
 | page      | String     | The page number to fetch. Defaults to first page.
 
