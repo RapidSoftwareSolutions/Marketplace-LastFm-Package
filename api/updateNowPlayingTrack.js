@@ -15,18 +15,15 @@ module.exports = (req, res) => {
         secretKey,
         artist,
         track,
-        timestamp,
         album,
         context,
-        streamId,
-        chosenByUser,
-        trackNumber,
         mbid,
         albumArtist,
+        trackNumber,
         duration
     } = req.body.args;
         
-    let required = lib.parseReq({apiKey, sessionKey, artist, track, timestamp, secretKey});
+    let required = lib.parseReq({apiKey, sessionKey, secretKey, artist, track});
 
     if(required.length > 0) 
         throw new Object({
@@ -45,19 +42,16 @@ module.exports = (req, res) => {
     let request = lib.clearArgs({
         artist,
         track,
-        timestamp,
         album,
-        context,
-        streamId,
-        chosenByUser,
         trackNumber,
+        context,
         mbid,
-        albumArtist,
-        duration
+        duration,
+        albumArtist
     });
     
-    lfm.track.scrobble(request, (err, scrobbles) => {
-        if (err) defered.reject(err);
+    lfm.track.updateNowPlaying(request, (err, scrobbles) => {
+        if (err) defered.reject(err);   
 
         defered.resolve(scrobbles);
     });  

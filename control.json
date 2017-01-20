@@ -405,21 +405,6 @@
             "String|artist": "$artist"
         }
     },
-    "updateNowPlayingTrack": {
-        "action": "track.updateNowPlaying",
-        "method": "POST",
-        "args": {
-            "String|apiKey": "$api_key",
-            "String|artist": "$artist",
-            "String|track": "$track",
-            "String|sessionKey": "$sk",
-            "String|album": "album",
-            "String|context": "context",
-            "String|mbid": "mbid",
-            "String|albumArtist": "albumArtist",
-            "String|duration": "duration"
-        }
-    },
     "getUserArtistTracks": {
         "action": "user.getArtistTracks",
         "method": "GET",

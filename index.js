@@ -1,6 +1,6 @@
 "use strict";
 global.PACKAGE_NAME = 'LastFm';
-global.API_ROOT     = 'http://ws.audioscrobbler.com/2.0/';
+global.API_ROOT     = 'https://ws.audioscrobbler.com/2.0/';
 
 const express       = require('express'),
     bodyParser      = require('body-parser'),
@@ -28,7 +28,7 @@ for(let func in control) {
         query:     {},
         hasSkip:   true,
         parseUri:  true,
-        debug:     true
+        debug:     false
     };
 
     let {

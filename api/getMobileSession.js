@@ -36,7 +36,7 @@ module.exports = (req, res) => {
             api_key: apiKey,
             format: 'json'
         },
-        method: 'GET'
+        method: 'POST'
     }, (err, response, reslut) => {
         if(!err && (/20.*/).test(response.statusCode))  
             defered.resolve(lib.safeParse(reslut));

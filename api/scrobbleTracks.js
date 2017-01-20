@@ -33,7 +33,8 @@ module.exports = (req, res) => {
     lfm.setSessionCredentials('', sessionKey);  
 
     try {
-        scrobbleData = JSON.parse(scrobbleData);
+        if(!Array.isArray(scrobbleData))
+            scrobbleData = JSON.parse(scrobbleData);
     } catch(e) {
         throw new Object({
             status_code: 'JSON_VALIDATION', 
