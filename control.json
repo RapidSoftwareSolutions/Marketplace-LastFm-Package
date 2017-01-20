@@ -238,8 +238,8 @@
             "String|lang": "lang"
         }
     },
-    "tag.getSimilar": {
-        "action": "getSimilarTags",
+    "getSimilarTags": {
+        "action": "tag.getSimilar",
         "method": "GET",
         "args": {
             "String|apiKey": "$api_key",

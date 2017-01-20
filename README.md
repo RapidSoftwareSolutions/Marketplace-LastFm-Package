@@ -265,7 +265,7 @@ Get the metadata for a tag
 | tag       | String     | The tag name
 | lang      | String     | The language to return the wiki in, expressed as an ISO 639 alpha-2 code.
 
-## LastFm.tag.getSimilar
+## LastFm.getSimilarTags
 Search for tags similar to this one. Returns tags ranked by similarity, based on listening data.
 
 | Field     | Type       | Description
