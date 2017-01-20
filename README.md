@@ -299,7 +299,6 @@ Fetches the top global tags on Last.fm, sorted by popularity (number of times us
 | Field     | Type       | Description
 |-----------|------------|----------
 | apiKey    | credentials| A Last.fm API key.
-| tag       | String     | The tag name
 
 ## LastFm.getTopTagTracks
 Get the top tracks tagged by this tag, ordered by tag count.
