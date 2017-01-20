@@ -1151,18 +1151,6 @@
           "type": "String",
           "info": "The tag name",
           "required": true
-        },
-        {
-          "name": "limit",
-          "type": "String",
-          "info": "The number of results to fetch per page. Defaults to 50.",
-          "required": false
-        },
-        {
-          "name": "page",
-          "type": "String",
-          "info": "The page number to fetch. Defaults to first page.",
-          "required": false
         }
       ],
       "callbacks": [
@@ -1231,18 +1219,6 @@
           "type": "String",
           "info": "The tag name",
           "required": true
-        },
-        {
-          "name": "limit",
-          "type": "String",
-          "info": "The number of results to fetch per page. Defaults to 50.",
-          "required": false
-        },
-        {
-          "name": "page",
-          "type": "String",
-          "info": "The page number to fetch. Defaults to first page.",
-          "required": false
         }
       ],
       "callbacks": [
@@ -2501,7 +2477,7 @@
         {
           "name": "from",
           "type": "String",
-          "info": "The date at which the chart should start from. See User.getWeeklyChartList for more.",
+          "info": "The date at which the chart should start from.",
           "required": false
         },
         {
