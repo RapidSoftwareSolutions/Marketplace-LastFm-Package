@@ -156,7 +156,7 @@
           "name": "user",
           "type": "String",
           "info": "If called in non-authenticated mode you must specify the user to look up.",
-          "required": false
+          "required": true
         }
       ],
       "callbacks": [
@@ -482,6 +482,12 @@
           "name": "artist",
           "type": "String",
           "info": "The artist name",
+          "required": true
+        },
+        {
+          "name": "user",
+          "type": "String",
+          "info": "User to look up.",
           "required": true
         },
         {
@@ -1471,8 +1477,8 @@
         {
           "name": "user",
           "type": "String",
-          "info": "If called in non-authenticated mode you must specify the user to look up",
-          "required": false
+          "info": "User to look up.",
+          "required": true
         }
       ],
       "callbacks": [

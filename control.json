@@ -32,7 +32,7 @@
             "String|album": "$album",
             "String|mbid": "mbid",
             "String|autocorrect": "autocorrect",
-            "String|user": "user"
+            "String|user": "$user"
         }
     },
     "getTopAlbumTags": {
@@ -113,6 +113,7 @@
         "method": "GET",
         "args": {
             "String|apiKey": "$api_key",
+            "String|user": "$user",
             "String|artist": "$artist",
             "String|mbid": "mbid",
             "String|autocorrect": "autocorrect"
@@ -349,7 +350,7 @@
             "String|artist": "$artist",
             "String|mbid": "mbid",
             "String|autocorrect": "autocorrect",
-            "String|user": "user"
+            "String|user": "$user"
         }
     },
     "getTopTrackTags": {
