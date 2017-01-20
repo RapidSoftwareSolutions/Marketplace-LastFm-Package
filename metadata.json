@@ -1145,12 +1145,6 @@
           "type": "credentials",
           "info": "A Last.fm API key.",
           "required": true
-        },
-        {
-          "name": "tag",
-          "type": "String",
-          "info": "The tag name",
-          "required": true
         }
       ],
       "callbacks": [
