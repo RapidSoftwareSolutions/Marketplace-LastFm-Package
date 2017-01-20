@@ -888,7 +888,7 @@
           "name": "page",
           "type": "String",
           "info": "The page number to fetch. Defaults to first page.",
-          "required": true
+          "required": false
         },
         {
           "name": "limit",
@@ -1381,12 +1381,6 @@
           "required": true
         },
         {
-          "name": "mbid",
-          "type": "String",
-          "info": "The musicbrainz id for the track",
-          "required": true
-        },
-        {
           "name": "track",
           "type": "String",
           "info": "The track name",
@@ -1396,6 +1390,12 @@
           "name": "artist",
           "type": "String",
           "info": "The artist name",
+          "required": false
+        },
+        {
+          "name": "mbid",
+          "type": "String",
+          "info": "The musicbrainz id for the track",
           "required": false
         },
         {

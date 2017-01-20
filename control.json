@@ -195,7 +195,7 @@
         "method": "GET",
         "args": {
             "String|apiKey": "$api_key",
-            "String|page": "$page",
+            "String|page": "page",
             "String|limit": "limit"
         }
     },
@@ -321,7 +321,7 @@
         "method": "GET",
         "args": {
             "String|apiKey": "$api_key",
-            "String|mbid": "$mbid",
+            "String|mbid": "mbid",
             "String|track": "$track",
             "String|artist": "artist",
             "String|username": "username",
