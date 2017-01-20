@@ -563,7 +563,7 @@ Get the top albums listened to by a user. You can stipulate a time period. Sends
 |-----------|------------|----------
 | apiKey    | credentials| A Last.fm API key.
 | user      | String     | The user name to fetch top albums for.
-| period    | String     | overall | 7day | 1month | 3month | 6month | 12month - The time period over which to retrieve top albums for.
+| period    | String     | overall &#124; 7day &#124; 1month &#124; 3month &#124; 6month &#124; 12month - The time period over which to retrieve top albums for.
 | limit     | String     | The number of results to fetch per page. Defaults to 50.
 | page      | String     | The page number to fetch. Defaults to first page.
 
@@ -574,7 +574,7 @@ Get the top artists listened to by a user. You can stipulate a time period. Send
 |-----------|------------|----------
 | apiKey    | credentials| A Last.fm API key.
 | user      | String     | The user name to fetch top albums for.
-| period    | String     | overall | 7day | 1month | 3month | 6month | 12month - The time period over which to retrieve top albums for.
+| period    | String     | overall &#124; 7day &#124; 1month &#124; 3month &#124; 6month &#124; 12month - The time period over which to retrieve top albums for.
 | limit     | String     | The number of results to fetch per page. Defaults to 50.
 | page      | String     | The page number to fetch. Defaults to first page.
 
