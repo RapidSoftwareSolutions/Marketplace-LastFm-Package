@@ -13,6 +13,9 @@ const PORT          = process.env.PORT || 8080;
 const API           = lib.init();
 const app           = express();
 
+var redefinition = require('./redefinition');
+
+
 let mfile = fs.readFileSync('./metadata.json', 'utf-8'),
     cfile = fs.readFileSync('./control.json',  'utf-8');
 
@@ -46,6 +49,7 @@ for(let func in control) {
         };
 
         req.body.args = lib.clearArgs(req.body.args);
+        req.body.args = redefinition.override(req.body.args);
 
         try {
 

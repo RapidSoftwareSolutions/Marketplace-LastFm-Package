@@ -9,6 +9,7 @@
     "file-type": "^4.0.0",
     "lastfmapi": "^0.1.1",
     "md5": "^2.2.1",
+    "node-datetime": "^1.0.1",
     "q": "^1.4.1",
     "rapi-js-package": "^1.2"
   },

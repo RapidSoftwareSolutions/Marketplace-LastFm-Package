@@ -14,7 +14,7 @@
     ]
   },
   "blocks": [
-    {
+      {
       "name": "tagAlbum",
       "description": "Tag an album using a list of user supplied tags.",
       "args": [
@@ -1620,7 +1620,27 @@
           "name": "scrobbleData",
           "type": "Array",
           "info": "Scrobble data. See README for more info.",
-          "required": true
+          "required": true,
+          "structure": [
+            {
+              "artist": "artist",
+              "type": "String",
+              "info": "artist",
+              "required": true
+            },
+            {
+              "track": "value",
+              "type": "String",
+              "info": "Value string",
+              "required": true
+            },
+            {
+              "track": "timestamp",
+              "type": "DatePicker",
+              "info": "unixtime",
+              "required": true
+            }
+          ]
         }
       ],
       "callbacks": [
@@ -1670,7 +1690,7 @@
         },
         {
           "name": "timestamp",
-          "type": "String",
+          "type": "DatePicker",
           "info": "The time the track started playing, in UNIX timestamp format (integer number of seconds since 00:00:00, January 1st 1970 UTC). This must be in the UTC time zone.",
           "required": true
         },
@@ -1926,7 +1946,7 @@
         },
         {
           "name": "startTimestamp",
-          "type": "String",
+          "type": "DatePicker",
           "info": "An unix timestamp to start at.",
           "required": false
         },
@@ -1938,7 +1958,7 @@
         },
         {
           "name": "endTimestamp",
-          "type": "String",
+          "type": "DatePicker",
           "info": "An unix timestamp to end at.",
           "required": false
         }
@@ -2144,7 +2164,7 @@
         },
         {
           "name": "from",
-          "type": "String",
+          "type": "DatePicker",
           "info": "Beginning timestamp of a range - only display scrobbles after this time, in UNIX timestamp format (integer number of seconds since 00:00:00, January 1st 1970 UTC). This must be in the UTC time zone.",
           "required": false
         },
@@ -2156,7 +2176,7 @@
         },
         {
           "name": "to",
-          "type": "String",
+          "type": "DatePicker",
           "info": "End timestamp of a range - only display scrobbles before this time, in UNIX timestamp format (integer number of seconds since 00:00:00, January 1st 1970 UTC). This must be in the UTC time zone.",
           "required": false
         }
@@ -2190,7 +2210,8 @@
         },
         {
           "name": "period",
-          "type": "String",
+          "type": "Select",
+          "options": ["overall","7day","1month","3month","6month","12month"],
           "info": "overall | 7day | 1month | 3month | 6month | 12month - The time period over which to retrieve top albums for.",
           "required": false
         },
@@ -2236,7 +2257,8 @@
         },
         {
           "name": "period",
-          "type": "String",
+          "type": "Select",
+          "options": ["overall","7day","1month","3month","6month","12month"],
           "info": "overall | 7day | 1month | 3month | 6month | 12month - The time period over which to retrieve top albums for.",
           "required": false
         },
@@ -2316,7 +2338,8 @@
         },
         {
           "name": "period",
-          "type": "String",
+          "type": "Select",
+          "options": ["overall","7day","1month","3month","6month","12month"],
           "info": "overall | 7day | 1month | 3month | 6month | 12month - The time period over which to retrieve top tracks for.",
           "required": false
         },
@@ -2362,13 +2385,13 @@
         },
         {
           "name": "from",
-          "type": "String",
+          "type": "DatePicker",
           "info": "The date at which the chart should start from.",
           "required": false
         },
         {
           "name": "to",
-          "type": "String",
+          "type": "DatePicker",
           "info": "The date at which the chart should end on.",
           "required": false
         }
@@ -2402,13 +2425,13 @@
         },
         {
           "name": "from",
-          "type": "String",
+          "type": "DatePicker",
           "info": "The date at which the chart should start from.",
           "required": false
         },
         {
           "name": "to",
-          "type": "String",
+          "type": "DatePicker",
           "info": "The date at which the chart should end on.",
           "required": false
         }
@@ -2470,13 +2493,13 @@
         },
         {
           "name": "from",
-          "type": "String",
+          "type": "DatePicker",
           "info": "The date at which the chart should start from.",
           "required": false
         },
         {
           "name": "to",
-          "type": "String",
+          "type": "DatePicker",
           "info": "The date at which the chart should end on.",
           "required": false
         }
