@@ -4,10 +4,9 @@
 * Credentials: apiKey, secretKey
 
 ## How to get credentials:
-0. Create new API account [here](http://www.last.fm/api/account/create).
-1. Copy and save your API key.
-
-Use **API key**	as `apiKey` and **Shared secret** as `secretKey`.
+0. Create a new API account [here](http://www.last.fm/api/account/create).
+1. Copy and save your API keys to be used with RapidAPI.
+2. Use **API key**	as `apiKey` and **Shared secret** as `secretKey`.
 
 ## Custom datatypes:
  |Datatype|Description|Example
