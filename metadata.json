@@ -16,7 +16,7 @@
   "steps": [
     "Create a new API account here(http://www.last.fm/api/account/create).",
     "Copy and save your API keys to be used with RapidAPI.",
-    "Use API key	as apiKey and Shared secret as secretKey."
+    "Use API key as apiKey and shared secret as secretKey."
   ],
   "blocks": [
       {
